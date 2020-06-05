@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6fff8;
+}
+/***************************HEADER PART******************************/
+/*Header*/
+.header {
+	width: 100vw;
+	height: 100px;
+	display: block;
+	background-color: #004d38;
+}
+.iheader {
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.hlcontainer {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0; 
+}
+.hlcontainer h1 {
+	color: white;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+	font-weight: 50;
+}
+.hlcontainer h1 span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800; 
+}
+/*Navigation*/
+.navigation {
+	float: right;
+	height: 100%;
+}
+.navigation a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+}
+
+.navigation a:last-child {
+	padding-right: 0;
+}
+.navigation a li {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.navigation a li:hover, li.active {
+	color: yellow;
+	display: block;
+}
+
+/********************Menu Button****************************/
+
+
+/********************************CONTENT********************************************/
+.content {
+	width: 90%;
+	height: 400px;
+	display: block;
+	margin: 10px auto;
+	background-color: #009970;
+}
+
+.content img {
+	width: 99%;
+	height: 99%;
+	padding-top: 5px;
+	display: block;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.icontent h1 {
+	width: 70vw;
+	height: 100%;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	font-weight: 90%;
+	display: block;
+	float: left;
+}
+.icontent span {
+	font-family: 'Amatic SC', cursive;
+	padding: 0 50px;
+	font-size: 80px;
+	font-weight: 90%;
+}
+
+.icontent p {
+	padding-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	float: left; 
+}
+/************************************FOOTER PART**********************************************/
+.footer {
+	margin-top: 40%;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+	float: bottom;
+	width: 100vw; /*scale to the size of the browser*/
+	display: block;
+	overflow: hidden;
+	padding: 30px 0; /*70px top and bottom and 0 to the left and right*/
+	box-sizing: border-box;
+	background-color: #333333;
+}
+.ifooter {
+	display: block;
+	margin: 0 auto;
+	width: 1100px;
+	height: 100%; 
+}
+
+.ifooter .flcontainer {
+	width: 20%;
+	float: left;
+	height: 100%;
+	display: block;
+}
+.ifooter .flcontainer img {
+	width: 25%;
+	height: auto;
+}
+
+.ifooter .footer_third {
+	width: calc(25% - 20px);
+	margin-right: 10px;
+	float: left;
+	height: 100%
+}
+.ifooter .footer_third:last-child {
+	margin-right: 0;
+}
+.ifooter .footer_third h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 19px;
+	color: white;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.ifooter .footer_third a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color: white;
+	display: block;
+	font-weight: 200;
+	width: 100%;
+	padding-bottom: 5px;
+}
+.ifooter .footer_third li {
+	display: inline-block;
+	color: white;
+	padding: 0 5px;
+	font-size: 20px; 
+}
+
+.ifooter .footer_third span {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: 200;
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+}
+
+@media(max-width: 768px) {
+	.footer .ifooter {
+		width: 90%;
+	}
+
+	.ifooter .flcontainer,
+	.ifooter .footer_third {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+/***************MEDIA QUERY**************/
+/****** Large devices only (atleast 992 pixels wide) ******/
+@media (min-width: 992px) {
+	.header .footer,
+	.navigation .content {
+		width: 50%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}	
+}
+/******* Medium devices only (around 768px and 991px)*******/
+@media (min-width: 768px) and (max-width: 991px) {
+	.header .footer,
+	.navigation .content {
+		width: 70%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+}
+/******** Small devices only *********/
+@media (max-width: 767px) {
+	.header .footer,
+	.navigation .content {
+		width: 90%;
+		float: left;
+		margin-right: 0;
+		margin-left: 2%;
+	}
+	#navg a li {
+		margin-left: 100px;
+        margin-right: 100px;
+        font-size: 15px;
+	}
+}

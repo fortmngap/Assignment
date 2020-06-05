@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e6fff8;
+}
+/***************************HEADER PART******************************/
+/*Header*/
+.header {
+	width: 100vw;
+	height: 100px;
+	display: block;
+	background-color: #004d38;
+}
+.iheader {
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.hlcontainer {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0; 
+}
+.hlcontainer h1 {
+	color: white;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+	font-weight: 50;
+}
+.hlcontainer h1 span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800; 
+}
+/*Navigation*/
+.navigation {
+	float: right;
+	height: 100%;
+}
+.navigation a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+}
+
+.navigation a:last-child {
+	padding-right: 0;
+}
+.navigation a li {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.navigation a li:hover {
+	color: yellow;
+	display: block;
+}
+
+/********************Menu Button****************************/
+
+
+/********************************CONTENT********************************************/
+.picture {
+	width: 50%;
+	height: 100%;
+	display: block;
+	margin: 10px auto;
+	background-color: #009970;
+}
+.ipicture {
+	width: 80%;
+	height: 100%;
+	display: block;
+	margin: 10px 55px;
+}
+.picture h1 {
+	width: 50vw;
+	height: 100%;
+	padding: 10px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+	font-weight: 90%;
+	display: block;
+}
+ .ipicture img {
+ 	width: 60%;
+ 	margin: 20px 90px;
+ 	display: block;
+ }
+
+.ipicture p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 23px;
+	padding: 10px;
+}
+
+.ipicture p span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+.video {
+	width: 50%;
+	height: 100%;
+	display: block;
+	margin: 10px auto;
+	background-color: #009970;
+}
+.ivideo {
+	width: 80%;
+	height: 100%;
+	display: block;
+	margin: 10px 55px;
+}
+.video h1 {
+	width: 50vw;
+	height: 100%;
+	padding: 10px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
+	font-weight: 90%;
+	display: block;
+}
+
+.video p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 23px;
+	padding: 10px;
+}
+
+.video p span {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+/************************************FOOTER PART**********************************************/
+.footer {
+	margin-top: 30%;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+	float: bottom;
+	width: 100vw; /*scale to the size of the browser*/
+	display: block;
+	overflow: hidden;
+	padding: 30px 0; /*70px top and bottom and 0 to the left and right*/
+	box-sizing: border-box;
+	background-color: #333333;
+}
+.ifooter {
+	display: block;
+	margin: 0 auto;
+	width: 1100px;
+	height: 100%; 
+}
+
+.ifooter .flcontainer {
+	width: 20%;
+	float: left;
+	height: 100%;
+	display: block;
+}
+.ifooter .flcontainer img {
+	width: 25%;
+	height: auto;
+}
+
+.ifooter .footer_third {
+	width: calc(25% - 20px);
+	margin-right: 10px;
+	float: left;
+	height: 100%
+}
+.ifooter .footer_third:last-child {
+	margin-right: 0;
+}
+.ifooter .footer_third h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 22px;
+	color: white;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.ifooter .footer_third a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: white;
+	display: block;
+	font-weight: 200;
+	width: 100%;
+	padding-bottom: 5px;
+}
+.ifooter .footer_third li {
+	display: inline-block;
+	color: white;
+	padding: 0 5px;
+	font-size: 20px; 
+}
+
+.ifooter .footer_third span {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: 200;
+	display: block;
+	width: 100%;
+	padding-top: 20px;
+}
+
+@media(max-width: 768px) {
+	.footer .ifooter {
+		width: 90%;
+	}
+
+	.ifooter .flcontainer,
+	.ifooter .footer_third {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
